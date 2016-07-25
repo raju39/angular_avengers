@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>First angular app</title>
+
+	<!-- Include scripts -->
+	<script src="./assets/plugins/angular.js"></script>
+	<script src="./assets/plugins/jquery.js"></script>
+	<script src="./assets/js/materialize.js"></script>
+
+	<!-- Include styles -->
+	
+
+</head>
+<body>
+
+<div ng-controller="homeController">
+	
+	<input type="text" ng-model="search" />
+	<ul>
+		<li ng-repeat="avenger in avengers | filter:search"> {{avenger}} </li>
+	</ul>
+	
+</div>
+
+<script>
+	angular.module('app' , [])
+
+	.controller('homeController' ,  function($scope){
+		var arr = [
+		'Hulk',
+		'Iron Man',
+		'Thor',
+		'Captain America',
+		'Black Widow',
+		'Hawk Eye'
+		];
+
+		$scope.avengers = arr;
+	});
+</script>
+</body>
+</html>

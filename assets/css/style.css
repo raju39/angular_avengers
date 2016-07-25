@@ -1,0 +1,44 @@
+
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: -50px; /* account for padding and border if not using box-sizing: border-box; */
+}
+
+#fb-wrapper{
+	visibility: hidden;
+}
+
+#fb-wrapper a{
+	text-align: center;
+	margin : 0 auto;
+}
+
+.avenger-card{
+cursor:pointer;
+filter: grayscale(100);
+transition: 0.4s linear;
+}
+
+.avenger-card:hover{
+cursor:pointer;
+transition: 0.4s linear;
+filter: grayscale(0);
+}
+
+#user-image {
+    border-radius: 100%;
+    float: left;
+    margin-right: 9px;
+    margin-top: 15px;
+    width: 34px;
+}
+
+.card .card-title {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    width: 100%;
+}

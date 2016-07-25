@@ -1,0 +1,57 @@
+<h2>Here you can add new Avengers to the team, aloha !</h2>
+
+<form id="avenger-form" ng-submit="submit();">
+	
+	<div class="row">
+		<div class="input-field col s12">
+          <input placeholder="Name" ng-model="name" name="name" id="name" type="text" class="validate" required/>
+          <label for="name">Name</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input placeholder="Image URL" id="image" ng-model="image" name="image" type="text" class="validate" required />
+          <label for="image">Image URL</label>
+        </div>
+
+        <div class="input-field col s12">
+          <textarea id="description"  ng-model="description" name="description"  class="materialize-textarea"  required></textarea>
+          <label for="description">Description</label>
+        </div>
+
+        <h5>Attributes</h5>
+        
+        <div class="input-field col s12">
+          <input placeholder="Real Name" id="real_name"  ng-model="real_name" name="real_name"  type="text" class="validate"  required />
+          <label for="real_name">Real Name</label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <input placeholder="Height" id="height" type="text" ng-model="height" name="height" class="validate"  required />
+          <label for="height">Height</label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <input placeholder="Weight" id="Weight" type="text" class="validate" ng-model="weight" name="weight"  required />
+          <label for="Weight">Weight</label>
+        </div>
+
+		<div class="input-field col s12">
+          <textarea id="power" ng-model="power" name="power" class="materialize-textarea" required></textarea>
+          <label for="power">Power</label>
+        </div>
+
+        <div class="input-field col s12">
+          <textarea id="ability" ng-model="ability" name="ability" class="materialize-textarea" required></textarea>
+          <label for="ability">Ability</label>
+        </div>
+
+        <div class="input-field col s12">
+           <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  			</button>
+  		</div>
+        
+        </div>
+
+</form>        
+

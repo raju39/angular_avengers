@@ -1,0 +1,68 @@
+ <div class="row">
+        <div class="col s12">
+
+
+
+<div class="center-align"  ng-if="!avenger">
+<br/><br/><br/><br/><br/>
+<div class="preloader-wrapper big active">
+
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+      </div>
+      <p>
+        <span class="teal-text">Please wait....</span>
+      </p>
+</div>
+
+          <div class="card animated bounceIn" ng-if="avenger">
+            <div class="card-image">
+              <img src="{{avenger.image}}" />
+              <span class="card-title">{{avenger.name}}</span>
+            </div>
+            <div class="card-content">
+  <strong>Real Name</strong> : {{avenger.real_name}} | <strong>Height</strong> : {{avenger.height}} | <strong>Weight</strong> : {{avenger.weight}}
+
+  <hr/>
+
+              <ul>
+                <li>
+                  <h5><i class="material-icons left">description</i>Description</h5>
+                  <p>{{avenger.description}}</p>
+                </li>
+
+                <li>
+                  <h5><i class="material-icons left">accessibility</i>Ability</h5>
+                  <p>{{avenger.ability}}</p>
+                </li>
+
+                <li>
+                  <h5><i class="material-icons left">device_hub</i>Power</h5>
+                  <p>{{avenger.power}}</p>
+                </li>
+              
+
+
+
+
+
+              </ul>
+            </div>
+            <div class="card-action">
+              
+              <form>
+              <a class="ng-class: animateit; waves-effect waves-light btn">Like<i class="material-icons left">thumb_up</i></a>
+
+              <a class="waves-effect waves-light btn green">Liked<i class="material-icons left">thumb_up</i></a>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
